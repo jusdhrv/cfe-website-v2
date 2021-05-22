@@ -1,1 +1,141 @@
+<style>
+.spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+
+  footer {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    display: flex;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: red;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .github-star-badge {
+    color: #24292e;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: 3px;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    margin-left: 4px;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  }
+
+  .github-star-badge:hover {
+    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+    border-color: rgba(27,31,35,.35);
+    background-position: -.5em;
+  }
+
+  .github-star-badge .material-icons {
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+  }
+
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+  @media screen and (max-width: 767px) {
+  
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+  }
+</style>
+
+<div class="toolbar" role="banner">
+    <img
+      width="40"
+      alt="Website Logo"
+      src="../favicon.ico"
+    />
+    <span>Welcome</span>
+      <div class="spacer"></div>
+      <a aria-label="Angular on YouTube" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCAKach0yPvEjLxLOY5MtS5A" title="YouTube">
+        <svg id="youtube-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+          <path d="M0 0h24v24H0V0z" fill="none"/>
+          <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
+        </svg>
+      </a>
+  </div>
+
 <router-outlet></router-outlet>
+
+<footer>
+  <a href="https://www.youtube.com/channel/UCAKach0yPvEjLxLOY5MtS5A?sub_confirmation=1">Love my tutorials? Subscribe to show your support! </a>
+</footer>
