@@ -31,13 +31,31 @@
       background-color: #fafafa;
       margin: 0 8px 16px;
       padding: 16px;
-      padding-top: 20px;
+      padding-top: 30px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       transition: all 0.2s ease-in-out;
       line-height: 24px;
+    }
+
+    .post p {
+      padding-left: 30px;
+      padding-right: 30px;
+      justify-content: center;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .post pre {
+      margin: 0 8px 16px;
+      border: 1px solid rgb(214, 214, 214);
+      border-radius: 5px;
+      background-color: #fafafa;
+      font-size: 20px;
+      background-color: black;
+      color: white;
     }
 </style>
 
@@ -48,17 +66,19 @@
   
     <div class="card-container">
       <div class='post'>
-          <h2>Post 1</h2>
+          <h2>Post 1 - Packages In Javascript</h2>
+          <hr>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+            So what exactly are Packages? <br> Packages are a set of functions and logics written by someone else for us to use. <br> To install packages we use the `npm install [package name]` or `npm i [package name]` command. <br> <br> For Example: <br> <pre> npm install colors </pre>
       </div>
 
       <div class='post'>
-        <h2>Post 2</h2>
+        <h2>Post 2 - Objects in Javascript</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
+            You may be wondering, what exactly are objects. <br>
+            Objects are like suitcases that can contain other objects or key-value pairs. <br> <br>
+            For example: <br>
+            <pre> var person1 = &#123; <br> name: 'John', <br> age: 26, <br> marks: &#123; <br>  english: 22, <br>  math: 23, <br>  science: 24 <br> &#125;<br>&#125; </pre>
+      </div>
     </div>  
   </div>
